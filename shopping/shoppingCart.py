@@ -44,11 +44,11 @@ class ShoppingCart:
                 self.shopping_cart.clear()
                 print(f"\n付款成功！剩餘餘額: ${self.user_balance}")
 
-    # def checkBalance(self):
-    #     if self.user_balance > 0:
-    #         print(f"\n剩餘餘額: ${self.user_balance}")
-    #     else:
-    #         print("\n餘額不足")
+     def checkBalance(self):
+         if self.user_balance > 0:
+             print(f"\n剩餘餘額: ${self.user_balance}")
+         else:
+             print("\n餘額不足")
 
 if __name__ == '__main__':
     cart = ShoppingCart()
@@ -59,7 +59,7 @@ if __name__ == '__main__':
       print("2. 顯示購物車內容")
       print("3. 付款")
       print("4. 離開")
-    #   print("5. 查看餘額")
+      print("5. 查看餘額")
 
       choice = input("\n請輸入選項 (1/2/3/4): ")
 
@@ -77,8 +77,8 @@ if __name__ == '__main__':
           print("\n謝謝光臨，再見！")
           break
 
-    #   elif choice == "5":
-    #       cart.checkBalance()
+       elif choice == "5":
+           cart.checkBalance()
 
       else:
           print("\n無效的選項，請重新輸入。")
